@@ -29,42 +29,54 @@ No external libraries or frameworks are used.
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
+```
 All-in-One-Converter/
 │
-├── assets/                 # Images, icons, and common resources
+├── assets/                     # Common images, icons, and styles
+│   ├── icons/
+│   │   ├── temp.png
+│   │   ├── length.png
+│   │   ├── weight.png
+│   │   ├── currency.png
+│   │   └── number.png
+│   │
 │   └── images/
-│       └── logo.png
+│       └── banner.png
 │
-├── main/                   # Main landing page
+├── main/                       # Main dashboard (Home page)
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
-├── temperature/            # Temperature converter module
+├── temperature/                # Temperature converter
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
-├── length/                 # Length converter module
+├── length/                     # Length converter
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
-├── weight/                 # Weight converter module
+├── weight/                     # Weight converter
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
-├── currency/               # Currency converter module
+├── currency/                   # Currency converter
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
-├── Number_Sys/             # Number system converter module
+├── Number_Sys/                 # Number system converter
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
-├── index.html              # Entry point (Home page)
-├── README.md               # Project documentation
-└── LICENSE                 # License file
+├── .gitignore                  # Git ignored files
+├── index.html                  # Project entry point
+├── README.md                   # Project documentation
+└── LICENSE                     # License file
+```
