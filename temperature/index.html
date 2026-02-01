@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="temp_container">
+
+      <div class="temp_header">
+        
+        <div class="temp_header_left">
+          <a href="/main/index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <h4>Home</h4>
+        </div>
+
+        <div class="temp_header_middle">
+          <h3>Temperature Converter</h3>
+          <p>Celsius, Fahrenheit, Kelvin</p>
+        </div>
+
+        <div class="temp_header_right">
+          <img src="/assets /temp.png" alt="" />
+        </div>
+      </div>
+
+
+      <div class="temp_body">
+
+        <div class="temp_body_inp">
+             <input type="number" class="temp_inp" placeholder="Enter Value">
+        </div>
+
+
+        <div class="temp_body_from">
+            <p>From:</p>
+            <select name="from" id="from">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+        </div>
+
+        <div class="temp_body_to">
+             <p>To:</p>
+            <select name="to" id="to">
+                <option value="F">Fahrenheit</option>
+                <option value="C">Celsius</option>
+                <option value="K">Kelvin</option>
+            </select>
+        </div>
+
+
+        <div class="temp_body_btn">
+            <button>Convert</button>
+        </div>
+
+
+        <div class="temp_body_res">
+            <p>Result:</p>
+            <div class="temp_res">
+                <p class="left1">100<sup>o</sup></p>
+                <p class="left2" >C</p>
+                <p>=</p>
+                <p class="right1">212<sup>o</sup></p>
+                <p class="right2">F</p>
+            </div>
+        </div>
+
+      </div>
+
+
+    </main>
+
+    <script src="app.js" ></script>
+  </body>
+</html>

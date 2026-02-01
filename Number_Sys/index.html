@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Number System Converter</title>
+
+  <link rel="stylesheet" href="/temperature/style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+
+  <main class="temp_container">
+
+    <!-- Header -->
+    <div class="temp_header">
+
+      <div class="temp_header_left">
+        <a href="/main/index.html">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h4>Home</h4>
+      </div>
+
+      <div class="temp_header_middle">
+        <h3>Number System Converter</h3>
+        <p>Decimal • Binary • Octal • Hex</p>
+      </div>
+
+      <div class="temp_header_right">
+        <img src="/assets /num.png" alt="number" />
+      </div>
+
+    </div>
+
+
+    <!-- Body -->
+    <div class="temp_body">
+
+      <!-- Input -->
+      <div class="temp_body_inp">
+        <input
+          type="text"
+          class="temp_inp"
+          placeholder="Enter Number"
+        >
+      </div>
+
+
+      <!-- From -->
+      <div class="temp_body_from">
+        <p>From:</p>
+
+        <select name="from" id="from">
+          <option value="DEC">Decimal (Base 10)</option>
+          <option value="BIN">Binary (Base 2)</option>
+          <option value="OCT">Octal (Base 8)</option>
+          <option value="HEX">Hexadecimal (Base 16)</option>
+        </select>
+      </div>
+
+
+      <!-- To -->
+      <div class="temp_body_to">
+        <p>To:</p>
+
+        <select name="to" id="to">
+          <option value="BIN">Binary (Base 2)</option>
+          <option value="DEC">Decimal (Base 10)</option>
+          <option value="OCT">Octal (Base 8)</option>
+          <option value="HEX">Hexadecimal (Base 16)</option>
+        </select>
+      </div>
+
+
+      <!-- Button -->
+      <div class="temp_body_btn">
+        <button>Convert</button>
+      </div>
+
+
+      <!-- Result -->
+      <div class="temp_body_res">
+
+        <p>Result:</p>
+
+        <div class="temp_res">
+          <p class="left1">10</p>
+          <p class="left2">DEC</p>
+          <p>=</p>
+          <p class="right1">1010</p>
+          <p class="right2">BIN</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- JS -->
+  <script src="app.js"></script>
+
+</body>
+</html>

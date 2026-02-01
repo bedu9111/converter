@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Currency Converter</title>
+
+  <link rel="stylesheet" href="/temperature/style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+
+  <main class="temp_container">
+
+    <!-- Header -->
+    <div class="temp_header">
+
+      <div class="temp_header_left">
+        <a href="/main/index.html">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h4>Home</h4>
+      </div>
+
+      <div class="temp_header_middle">
+        <h3>Currency Converter</h3>
+        <p>Convert ₹, $, €, ₨</p>
+      </div>
+
+      <div class="temp_header_right">
+        <img src="/assets /coin.png" alt="coin" />
+      </div>
+
+    </div>
+
+
+    <!-- Body -->
+    <div class="temp_body">
+
+      <!-- Input -->
+      <div class="temp_body_inp">
+        <input
+          type="number"
+          class="temp_inp"
+          placeholder="Enter Amount"
+        >
+      </div>
+
+
+      <!-- From -->
+      <div class="temp_body_from">
+        <p>From:</p>
+
+        <select name="from" id="from">
+          <option value="INR">INR (₹ Rupee)</option>
+          <option value="USD">USD ($ Dollar)</option>
+          <option value="NPR">NPR (₨ Rupee)</option>
+          <option value="EUR">EUR (€ Euro)</option>
+        </select>
+      </div>
+
+
+      <!-- To -->
+      <div class="temp_body_to">
+        <p>To:</p>
+
+        <select name="to" id="to">
+          <option value="USD">USD ($ Dollar)</option>
+          <option value="INR">INR (₹ Rupee)</option>
+          <option value="NPR">NPR (₨ Rupee)</option>
+          <option value="EUR">EUR (€ Euro)</option>
+        </select>
+      </div>
+
+
+      <!-- Button -->
+      <div class="temp_body_btn">
+        <button>Convert</button>
+      </div>
+
+
+      <!-- Result -->
+      <div class="temp_body_res">
+
+        <p>Result:</p>
+
+        <div class="temp_res">
+          <p class="left1">1</p>
+          <p class="left2">INR</p>
+          <p>=</p>
+          <p class="right1">0.012</p>
+          <p class="right2">USD</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- JS -->
+  <script src="app.js"></script>
+
+</body>
+</html>
